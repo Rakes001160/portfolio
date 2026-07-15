@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakesh Solanki | GIS Specialist &amp; Geospatial Expert</title>
+  <meta name="description" content="Portfolio of Rakesh Solanki — GIS Specialist with 3+ years of experience in geospatial analysis, remote sensing, hydrologic mapping, and Python automation.">
+  <meta name="keywords" content="GIS, Remote Sensing, Geospatial, QGIS, ArcGIS, SAR, Python, Portfolio">
+  <meta name="author" content="Rakesh Solanki">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">R.S</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="particles-canvas"></canvas>
+      <div class="hero-grid-overlay"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Available for Opportunities
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Rakesh Solanki</span>
+        </h1>
+        <p class="hero-subtitle"><span id="typing-text"></span><span style="color:var(--accent-1)">|</span></p>
+        <p class="hero-desc">Results-driven GIS and Remote Sensing professional with 3+ years of experience in geospatial analysis, hydrologic mapping, drone survey processing, and Python-based spatial automation.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+          <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-portrait">
+          <div class="portrait-ring"></div>
+          <img src="profile.jpg" alt="Rakesh Solanki — GIS Specialist" class="portrait-img">
+          <div class="portrait-dots"></div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num" data-target="3" data-suffix="+">0</div>
+            <div class="stat-label">Years Exp</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="10" data-suffix="+">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="5" data-suffix="+">0</div>
+            <div class="stat-label">Tools</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">Who I Am</div>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">A geospatial professional turning complex spatial data into actionable insights</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>I'm a <strong>GIS Specialist</strong> based in Ahmedabad, Gujarat with a strong academic foundation in Geoinformatics and hands-on experience across spatial analysis, remote sensing, and automated geospatial workflows.</p>
+          <p>Currently at <strong>Atomep Enteam Pvt. Ltd.</strong>, I work on GIS analysis, remote-sensing-based flood mapping, drone survey processing, and hydrology-related projects — creating maps, spatial models, and automated workflows that drive real-world impact.</p>
+          <div class="about-highlight">
+            <i class="fas fa-quote-left" style="color:var(--accent-1); margin-right:8px"></i>
+            Skilled at turning complex spatial datasets into clear, stakeholder-ready deliverables — from raw data ingestion to final thematic mapping and reporting.
+          </div>
+          <p>My background in Botany gives my geospatial work an added layer of environmental and ecological grounding, combining scientific rigor with modern spatial technologies.</p>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="about-card">
+            <div class="about-card-icon">🛰️</div>
+            <h4>Remote Sensing</h4>
+            <p>SAR analysis, satellite imagery interpretation, and multi-temporal change detection</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🗺️</div>
+            <h4>GIS Analysis</h4>
+            <p>Spatial modeling, geodatabase management, and thematic map preparation</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🤖</div>
+            <h4>Automation</h4>
+            <p>Python-based workflow automation for repetitive spatial data processing tasks</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🚁</div>
+            <h4>Drone Surveys</h4>
+            <p>Processing orthophotos, DSM, DTM from drone survey data</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">What I Know</div>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-desc">A comprehensive toolkit for geospatial analysis and automation</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon geo">🌐</div>
+          <h3>GIS Software</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">QGIS</span>
+            <span class="skill-tag">ArcGIS</span>
+            <span class="skill-tag">ArcGIS Pro</span>
+            <span class="skill-tag">Geodatabases</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon rs">📡</div>
+          <h3>Remote Sensing</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SAR Analysis</span>
+            <span class="skill-tag">Satellite Imagery</span>
+            <span class="skill-tag">Image Classification</span>
+            <span class="skill-tag">Change Detection</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon code">💻</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">GIS Automation</span>
+            <span class="skill-tag">Scripting</span>
+            <span class="skill-tag">Data Processing</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon survey">📐</div>
+          <h3>Survey & Mapping</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Drone Data</span>
+            <span class="skill-tag">Orthophotos</span>
+            <span class="skill-tag">DSM / DTM</span>
+            <span class="skill-tag">GPS Mapping</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon data">📊</div>
+          <h3>Spatial Analysis</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Hydrology</span>
+            <span class="skill-tag">Flood Mapping</span>
+            <span class="skill-tag">Terrain Analysis</span>
+            <span class="skill-tag">Thematic Maps</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon viz">📝</div>
+          <h3>Other Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MS Office</span>
+            <span class="skill-tag">Report Writing</span>
+            <span class="skill-tag">Map Preparation</span>
+            <span class="skill-tag">Data QA/QC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">Where I've Worked</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-desc">3+ years of delivering high-impact geospatial solutions</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">March 2024 — Present</span>
+            <h3>GIS Specialist</h3>
+            <div class="company">Atomep Enteam Pvt. Ltd.</div>
+            <ul>
+              <li>Working on GIS analysis, remote-sensing-based flood mapping, drone survey processing, and hydrology-related projects</li>
+              <li>Creating maps, spatial models, and automated workflows for client deliverables</li>
+              <li>Responsible for data quality checks (QA/QC) and ensuring spatial data integrity</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">September 2023 — February 2024</span>
+            <h3>Remote Sensing & GIS Specialist</h3>
+            <div class="company">AIC of India</div>
+            <ul>
+              <li>Conducted spatial analysis for agriculture and environmental monitoring</li>
+              <li>Worked on large geospatial datasets and thematic mapping projects</li>
+              <li>Developed workflows for satellite data processing and analysis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">January 2023 — March 2023</span>
+            <h3>Internship Trainee</h3>
+            <div class="company">Amnex Info Technologies Pvt. Ltd.</div>
+            <ul>
+              <li>Worked on Flood Mapping & Monitoring using SAR Data</li>
+              <li>Assessed agricultural impact through satellite-based spatial analysis</li>
+              <li>Gained hands-on experience with SAR data processing and interpretation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">What I've Built</div>
+        <h2 class="section-title">Key Projects</h2>
+        <p class="section-desc">Real-world geospatial solutions from flood mapping to drone analytics</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-banner flood">🌊</div>
+          <div class="project-body">
+            <h3>Flood Mapping & Monitoring Using SAR Data</h3>
+            <p>Processed SAR satellite data to map and monitor flood extents, assessing agricultural impact in affected regions using advanced remote sensing techniques.</p>
+            <div class="project-tags">
+              <span class="project-tag">SAR Data</span>
+              <span class="project-tag">Flood Analysis</span>
+              <span class="project-tag">Agriculture Impact</span>
+              <span class="project-tag">Remote Sensing</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-banner hydro">💧</div>
+          <div class="project-body">
+            <h3>Hydrological Analysis & Mapping</h3>
+            <p>Conducted comprehensive hydrology-related geospatial projects including watershed delineation, drainage analysis, and water resource assessment.</p>
+            <div class="project-tags">
+              <span class="project-tag">Hydrology</span>
+              <span class="project-tag">DEM Processing</span>
+              <span class="project-tag">Watershed</span>
+              <span class="project-tag">QGIS</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-banner drone">🚁</div>
+          <div class="project-body">
+            <h3>Drone Survey Data Processing</h3>
+            <p>Processed drone survey data to generate orthophotos, DSM, and DTM products for terrain analysis, site planning, and volumetric calculations.</p>
+            <div class="project-tags">
+              <span class="project-tag">Drone Survey</span>
+              <span class="project-tag">Orthophoto</span>
+              <span class="project-tag">DSM / DTM</span>
+              <span class="project-tag">Terrain</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-banner agri">🌾</div>
+          <div class="project-body">
+            <h3>Agriculture & Environmental Monitoring</h3>
+            <p>Spatial analysis for agriculture and environmental monitoring using satellite imagery, thematic mapping, and large-scale geospatial datasets.</p>
+            <div class="project-tags">
+              <span class="project-tag">Agriculture</span>
+              <span class="project-tag">Environment</span>
+              <span class="project-tag">Satellite Data</span>
+              <span class="project-tag">Thematic Maps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">My Learning Path</div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-desc">Academic foundation in Geoinformatics and Science</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <h3>M.Sc. Geoinformatics</h3>
+          <div class="edu-inst">Gujarat University</div>
+          <div class="edu-year">2023</div>
+          <span class="edu-score">65.60%</span>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">🔬</div>
+          <h3>B.Sc. Botany</h3>
+          <div class="edu-inst">Gujarat University</div>
+          <div class="edu-year">2021</div>
+          <span class="edu-score">60%</span>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">📘</div>
+          <h3>12th Science (HSC)</h3>
+          <div class="edu-inst">GSEB</div>
+          <div class="edu-year">2018</div>
+          <span class="edu-score">56%</span>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">📗</div>
+          <h3>10th (SSC)</h3>
+          <div class="edu-inst">GSEB</div>
+          <div class="edu-year">2016</div>
+          <span class="edu-score">64%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">Let's Connect</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">Open to GIS, Remote Sensing, and geospatial automation opportunities</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's work together</h3>
+          <p>Feel free to reach out for opportunities, collaborations, or just to say hello. I'm always excited to discuss geospatial projects and innovative solutions.</p>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-text">
+              <span>Phone</span>
+              <a href="tel:+918200469254">+91 8200469254</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <span>Email</span>
+              <a href="mailto:rakeshsolanki001160@gmail.com">rakeshsolanki001160@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text">
+              <span>Location</span>
+              <p>Ahmedabad, Gujarat, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-item-text">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/rakesh-solanki-30ba45221/" target="_blank" rel="noopener noreferrer">Rakesh Solanki</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-item-text">
+              <span>GitHub</span>
+              <a href="https://github.com/Rakes001160" target="_blank" rel="noopener noreferrer">Rakes001160</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" onsubmit="event.preventDefault(); alert('Thank you for your message! I will get back to you soon.');">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Mail" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2026 Rakesh Solanki. Crafted with <span class="heart">♥</span> and geospatial passion.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

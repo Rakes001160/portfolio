@@ -262,17 +262,7 @@ function showToast(message) {
 }
 
 function initCopyButtons() {
-  const copyPhone = document.getElementById('copy-phone-btn');
   const copyEmail = document.getElementById('copy-email-btn');
-
-  copyPhone?.addEventListener('click', (e) => {
-    e.preventDefault();
-    navigator.clipboard.writeText('+91 8200469254').then(() => {
-      showToast('Phone number (+91 8200469254) copied to clipboard!');
-    }).catch(() => {
-      showToast('Phone: +91 8200469254');
-    });
-  });
 
   copyEmail?.addEventListener('click', (e) => {
     e.preventDefault();

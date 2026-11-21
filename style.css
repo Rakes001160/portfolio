@@ -1571,9 +1571,15 @@ section {
 .contact-card.cv-card .contact-icon {
   background: rgba(6, 214, 160, 0.15);
 }
+.contact-card.full-width {
+  grid-column: span 2;
+}
 @media (max-width: 768px) {
   .contact-cards-grid {
     grid-template-columns: 1fr;
+  }
+  .contact-card.full-width {
+    grid-column: span 1;
   }
 }
 

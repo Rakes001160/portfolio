@@ -3,7 +3,7 @@ function initParticles() {
   const canvas = document.getElementById('particles-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  let w, h, particles = [], connections = [];
+  let w, h, particles = [];
 
   function resize() {
     w = canvas.width = canvas.parentElement.offsetWidth;
@@ -16,8 +16,8 @@ function initParticles() {
     constructor() {
       this.x = Math.random() * w;
       this.y = Math.random() * h;
-      this.vx = (Math.random() - 0.5) * 0.5;
-      this.vy = (Math.random() - 0.5) * 0.5;
+      this.vx = (Math.random() - 0.5) * 0.45;
+      this.vy = (Math.random() - 0.5) * 0.45;
       this.r = Math.random() * 2 + 1;
       this.alpha = Math.random() * 0.5 + 0.2;
     }
@@ -27,13 +27,14 @@ function initParticles() {
       if (this.y < 0 || this.y > h) this.vy *= -1;
     }
     draw() {
-      ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(6, 214, 160, ${this.alpha})`;
       ctx.fill();
     }
   }
 
-  const count = Math.min(80, Math.floor(w * h / 12000));
+  const count = Math.min(80, Math.floor((w * h) / 12000));
   for (let i = 0; i < count; i++) particles.push(new Particle());
 
   function animate() {
@@ -44,11 +45,11 @@ function initParticles() {
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 150) {
+        if (dist < 140) {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(6, 214, 160, ${0.08 * (1 - dist / 150)})`;
+          ctx.strokeStyle = `rgba(6, 214, 160, ${0.08 * (1 - dist / 140)})`;
           ctx.lineWidth = 0.5;
           ctx.stroke();
         }
@@ -67,7 +68,7 @@ function initNavbar() {
   const links = document.querySelectorAll('.nav-links a[href^="#"]');
 
   window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
   });
 
   hamburger?.addEventListener('click', () => {
@@ -83,7 +84,7 @@ function initNavbar() {
   });
 
   links.forEach(link => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener('click', () => {
       navLinks.classList.remove('open');
       const spans = hamburger?.querySelectorAll('span');
       spans?.forEach(s => { s.style.transform = 'none'; s.style.opacity = '1'; });
@@ -95,7 +96,7 @@ function initNavbar() {
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(sec => {
-      const top = sec.offsetTop - 100;
+      const top = sec.offsetTop - 120;
       if (window.scrollY >= top) current = sec.getAttribute('id');
     });
     links.forEach(link => {
@@ -113,7 +114,7 @@ function initReveal() {
         entry.target.classList.add('visible');
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
   document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
     observer.observe(el);
@@ -127,15 +128,22 @@ function initCounters() {
     entries.forEach(entry => {
       if (entry.isIntersecting && !entry.target.dataset.counted) {
         entry.target.dataset.counted = 'true';
-        const target = parseInt(entry.target.dataset.target);
+        const target = parseInt(entry.target.dataset.target, 10);
         const suffix = entry.target.dataset.suffix || '';
         let current = 0;
-        const step = target / 60;
+        const duration = 1200; // ms
+        const steps = 40;
+        const stepTime = duration / steps;
+        const increment = target / steps;
+        
         const timer = setInterval(() => {
-          current += step;
-          if (current >= target) { current = target; clearInterval(timer); }
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
           entry.target.textContent = Math.floor(current) + suffix;
-        }, 20);
+        }, stepTime);
       }
     });
   }, { threshold: 0.5 });
@@ -146,7 +154,13 @@ function initCounters() {
 function initTyping() {
   const el = document.getElementById('typing-text');
   if (!el) return;
-  const texts = ['GIS Specialist', 'Remote Sensing Expert', 'Geospatial Analyst', 'Python Automator'];
+  const texts = [
+    'Geospatial Analyst',
+    'GIS Specialist (AMC, GMC, SMC, GUDM)',
+    'Remote Sensing & SAR Expert',
+    'PyQGIS Tool Developer',
+    'Catchment & Flood GIS Specialist'
+  ];
   let textIdx = 0, charIdx = 0, deleting = false;
 
   function type() {
@@ -155,24 +169,129 @@ function initTyping() {
 
     if (!deleting) {
       charIdx++;
-      if (charIdx > current.length) { deleting = true; setTimeout(type, 1800); return; }
+      if (charIdx > current.length) {
+        deleting = true;
+        setTimeout(type, 1800);
+        return;
+      }
     } else {
       charIdx--;
-      if (charIdx === 0) { deleting = false; textIdx = (textIdx + 1) % texts.length; }
+      if (charIdx === 0) {
+        deleting = false;
+        textIdx = (textIdx + 1) % texts.length;
+      }
     }
-    setTimeout(type, deleting ? 40 : 80);
+    setTimeout(type, deleting ? 35 : 70);
   }
   type();
 }
 
-// ===== TILT EFFECT ON CARDS =====
+// ===== PROJECT FILTERING =====
+function initProjectFilters() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      projectCards.forEach(card => {
+        const categories = (card.getAttribute('data-category') || '').split(' ');
+        if (filter === 'all' || categories.includes(filter)) {
+          card.style.display = 'flex';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 20);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(15px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 250);
+        }
+      });
+    });
+  });
+}
+
+// ===== INTERACTIVE CV MODAL =====
+function initCvModal() {
+  const openBtn = document.getElementById('btn-open-cv-modal');
+  const modal = document.getElementById('cv-modal');
+  const closeBtn = document.getElementById('cv-modal-close');
+  const overlay = document.getElementById('cv-modal-overlay');
+
+  if (!modal) return;
+
+  function openModal() {
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  openBtn?.addEventListener('click', openModal);
+  closeBtn?.addEventListener('click', closeModal);
+  overlay?.addEventListener('click', closeModal);
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+}
+
+// ===== CLIPBOARD COPY & TOAST =====
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2500);
+}
+
+function initCopyButtons() {
+  const copyPhone = document.getElementById('copy-phone-btn');
+  const copyEmail = document.getElementById('copy-email-btn');
+
+  copyPhone?.addEventListener('click', (e) => {
+    e.preventDefault();
+    navigator.clipboard.writeText('+91 8200469254').then(() => {
+      showToast('Phone number (+91 8200469254) copied to clipboard!');
+    }).catch(() => {
+      showToast('Phone: +91 8200469254');
+    });
+  });
+
+  copyEmail?.addEventListener('click', (e) => {
+    e.preventDefault();
+    navigator.clipboard.writeText('rakeshsolanki001160@gmail.com').then(() => {
+      showToast('Email address copied to clipboard!');
+    }).catch(() => {
+      showToast('Email: rakeshsolanki001160@gmail.com');
+    });
+  });
+}
+
+// ===== TILT EFFECT =====
 function initTilt() {
-  document.querySelectorAll('.skill-card, .project-card').forEach(card => {
+  document.querySelectorAll('.skill-card, .project-card, .tool-item, .achieve-card, .contact-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
       const y = (e.clientY - rect.top) / rect.height - 0.5;
-      card.style.transform = `translateY(-4px) perspective(800px) rotateX(${-y * 5}deg) rotateY(${x * 5}deg)`;
+      card.style.transform = `translateY(-4px) perspective(800px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
     });
     card.addEventListener('mouseleave', () => {
       card.style.transform = 'translateY(0) perspective(800px) rotateX(0) rotateY(0)';
@@ -180,12 +299,15 @@ function initTilt() {
   });
 }
 
-// ===== INIT =====
+// ===== INITIALIZE ALL =====
 document.addEventListener('DOMContentLoaded', () => {
   initParticles();
   initNavbar();
   initReveal();
   initCounters();
   initTyping();
+  initProjectFilters();
+  initCvModal();
+  initCopyButtons();
   initTilt();
 });

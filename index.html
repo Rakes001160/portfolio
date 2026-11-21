@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakesh Solanki | GIS Specialist &amp; Geospatial Expert</title>
-  <meta name="description" content="Portfolio of Rakesh Solanki — GIS Specialist with 3+ years of experience in geospatial analysis, remote sensing, hydrologic mapping, and Python automation.">
-  <meta name="keywords" content="GIS, Remote Sensing, Geospatial, QGIS, ArcGIS, SAR, Python, Portfolio">
+  <title>Rakesh Solanki | Geospatial Analyst &amp; GIS Specialist</title>
+  <meta name="description"
+    content="Official Portfolio &amp; CV of Rakesh Solanki — Geospatial Analyst with 3+ years of experience in municipal flood mapping, remote sensing, hydrology, urban GIS, and Python automation for AMC, GMC, SMC, and GUDM.">
+  <meta name="keywords"
+    content="Rakesh Solanki, Geospatial Analyst, GIS Specialist, Remote Sensing, QGIS, ArcGIS, Flood Mapping, Sentinel-1 SAR, HEC-RAS, HEC-HMS, Python GIS Automation, AMC, GMC, SMC, GUDM">
   <meta name="author" content="Rakesh Solanki">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo">R.S</a>
+      <a href="#" class="nav-logo">
+        <span class="logo-accent">R.</span>SOLANKI
+        <span class="logo-badge">GIS Analyst</span>
+      </a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
+        <li><a href="#tools">Custom Tools</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta-item">
+          <a href="Rakesh_Solanki_Resume.pdf" download="Rakesh_Solanki_Geospatial_Analyst_Resume.pdf" class="nav-resume-btn">
+            <i class="fas fa-file-pdf"></i> Resume PDF
+          </a>
+        </li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-actions-mobile">
+        <a href="Rakesh_Solanki_Resume.pdf" download="Rakesh_Solanki_Geospatial_Analyst_Resume.pdf" class="btn-mobile-cv" title="Download CV">
+          <i class="fas fa-file-pdf"></i> CV
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -40,22 +62,33 @@
       <div class="hero-content">
         <div class="hero-badge">
           <span class="pulse"></span>
-          Available for Opportunities
+          <span>Available for Geospatial &amp; GIS Analyst Roles</span>
         </div>
         <h1 class="hero-title">
           Hi, I'm <span class="gradient-text">Rakesh Solanki</span>
         </h1>
-        <p class="hero-subtitle"><span id="typing-text"></span><span style="color:var(--accent-1)">|</span></p>
-        <p class="hero-desc">Results-driven GIS and Remote Sensing professional with 3+ years of experience in geospatial analysis, hydrologic mapping, drone survey processing, and Python-based spatial automation.</p>
+        <p class="hero-subtitle">
+          <span id="typing-text"></span><span class="cursor-blink">|</span>
+        </p>
+        <p class="hero-desc">
+          Geospatial Analyst with <strong>3+ years of experience</strong> in GIS and remote sensing for municipal flood studies, urban infrastructure, water resources, and solar site planning across government missions including <strong>AMC, GMC, SMC, and GUDM</strong>.
+        </p>
         <div class="hero-cta">
-          <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
-          <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-layer-group"></i> Explore Projects
+          </a>
+          <button id="btn-open-cv-modal" class="btn-secondary">
+            <i class="fas fa-eye"></i> Quick View CV
+          </button>
+          <a href="Rakesh_Solanki_Resume.pdf" download="Rakesh_Solanki_Geospatial_Analyst_Resume.pdf" class="btn-outline">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-portrait">
           <div class="portrait-ring"></div>
-          <img src="profile.jpg" alt="Rakesh Solanki — GIS Specialist" class="portrait-img">
+          <img src="profile.jpg" alt="Rakesh Solanki — Geospatial Analyst" class="portrait-img">
           <div class="portrait-dots"></div>
         </div>
         <div class="hero-stats">
@@ -64,17 +97,38 @@
             <div class="stat-label">Years Exp</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num" data-target="10" data-suffix="+">0</div>
-            <div class="stat-label">Projects</div>
+            <div class="stat-num" data-target="15" data-suffix="+">0</div>
+            <div class="stat-label">Projects &amp; Tools</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num" data-target="5" data-suffix="+">0</div>
-            <div class="stat-label">Tools</div>
+            <div class="stat-num" data-target="4" data-suffix="+">0</div>
+            <div class="stat-label">Govt Missions</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="2" data-suffix="">0</div>
+            <div class="stat-label">Awards / ISRO</div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ===== TRUSTED CLIENT MARQUEE ===== -->
+  <div class="trust-marquee-section">
+    <div class="trust-label">Government Missions, Municipal Corporations &amp; Private Enterprise Experience</div>
+    <div class="trust-badges">
+      <div class="trust-pill"><i class="fas fa-landmark"></i> Ahmedabad Municipal Corp. (AMC)</div>
+      <div class="trust-pill"><i class="fas fa-city"></i> Gandhinagar Municipal Corp. (GMC)</div>
+      <div class="trust-pill"><i class="fas fa-water"></i> Surat Municipal Corp. (SMC)</div>
+      <div class="trust-pill"><i class="fas fa-building"></i> Gujarat Urban Dev. Mission (GUDM)</div>
+      <div class="trust-pill"><i class="fas fa-shield-alt"></i> AIC of India Limited (AICL)</div>
+      <div class="trust-pill"><i class="fas fa-industry"></i> Leading Corporate &amp; Industrial Master Plans</div>
+      <div class="trust-pill"><i class="fas fa-drafting-compass"></i> Premier Private Townships &amp; Real Estate Schemes</div>
+      <div class="trust-pill"><i class="fas fa-satellite"></i> Amnex Info Technologies</div>
+      <div class="trust-pill"><i class="fas fa-graduation-cap"></i> IIT Bombay &amp; AICTE</div>
+      <div class="trust-pill"><i class="fas fa-satellite-dish"></i> IIRS, ISRO Dehradun</div>
+    </div>
+  </div>
 
   <!-- ===== ABOUT ===== -->
   <section id="about">
@@ -82,39 +136,99 @@
       <div class="section-header reveal">
         <div class="section-label">Who I Am</div>
         <h2 class="section-title">About Me</h2>
-        <p class="section-desc">A geospatial professional turning complex spatial data into actionable insights</p>
+        <p class="section-desc">Turning complex spatial data into actionable insights for municipal planning, water resources, and urban infrastructure</p>
       </div>
       <div class="about-grid">
         <div class="about-text reveal-left">
-          <p>I'm a <strong>GIS Specialist</strong> based in Ahmedabad, Gujarat with a strong academic foundation in Geoinformatics and hands-on experience across spatial analysis, remote sensing, and automated geospatial workflows.</p>
-          <p>Currently at <strong>Atomep Enteam Pvt. Ltd.</strong>, I work on GIS analysis, remote-sensing-based flood mapping, drone survey processing, and hydrology-related projects — creating maps, spatial models, and automated workflows that drive real-world impact.</p>
+          <p>
+            I am a <strong>Geospatial Analyst and GIS Specialist</strong> based in Ahmedabad, Gujarat, holding an <strong>M.Sc. in Geoinformatics</strong> and a <strong>B.Sc. in Botany</strong>. Over the past 3+ years, I have specialized in catchment delineation, drainage and stream order analysis, municipal flood inundation mapping, satellite remote sensing, drone and cadastral survey integration, and custom Python automation.
+          </p>
+          <p>
+            Currently at <strong>Atomep Enteam Pvt. Ltd.</strong>, I deliver GIS outputs for major municipal and government assignments including <strong>AMC, GMC, SMC, and GUDM</strong>, as well as extensive <strong>private corporate and industrial master plans</strong>. My work focuses on core GIS workflows: converting client-provided CAD drawings and plot schemes into georeferenced GIS vectors, developing them into high-resolution proposed grading raster surfaces, delineating catchments in QGIS &amp; ArcMap, performing drainage stream ordering, preparing DEMs for hydraulic workflows (using HEC-RAS basics), cartographically mapping model outputs, and maintaining asset inventories of over 800 structures.
+          </p>
           <div class="about-highlight">
-            <i class="fas fa-quote-left" style="color:var(--accent-1); margin-right:8px"></i>
-            Skilled at turning complex spatial datasets into clear, stakeholder-ready deliverables — from raw data ingestion to final thematic mapping and reporting.
+            <i class="fas fa-quote-left"></i>
+            "As a GIS Specialist, I don't just execute spatial workflows — I build customized PyQGIS tools and automated pipelines that streamline catchment delineation, DEM modification, and publication-ready cartography."
           </div>
-          <p>My background in Botany gives my geospatial work an added layer of environmental and ecological grounding, combining scientific rigor with modern spatial technologies.</p>
+          <p>
+            Previously at <strong>Agriculture Insurance Company of India (AICL)</strong>, I integrated cadastral records, administrative units, and multi-temporal satellite imagery for insurance unit mapping and crop loss assessment. My academic roots in Botany give me an authentic ecological understanding for LULC, NDVI, and climate-smart agricultural analysis.
+          </p>
         </div>
         <div class="about-cards reveal-right">
           <div class="about-card">
-            <div class="about-card-icon">🛰️</div>
-            <h4>Remote Sensing</h4>
-            <p>SAR analysis, satellite imagery interpretation, and multi-temporal change detection</p>
+            <div class="about-card-icon"><i class="fas fa-water"></i></div>
+            <h4>Catchment &amp; Flood GIS</h4>
+            <p>Catchment and watershed delineation in QGIS &amp; ArcMap, stream ordering (Strahler), flood inundation mapping, creek width variation, and thematic mapping of HEC-HMS / HEC-RAS outputs.</p>
           </div>
           <div class="about-card">
-            <div class="about-card-icon">🗺️</div>
-            <h4>GIS Analysis</h4>
-            <p>Spatial modeling, geodatabase management, and thematic map preparation</p>
+            <div class="about-card-icon"><i class="fas fa-satellite"></i></div>
+            <h4>Sentinel-1 SAR &amp; Remote Sensing</h4>
+            <p>Multi-temporal Sentinel-1 SAR analysis in Google Earth Engine (GEE), speckle filtering, backscatter thresholding, and temporal change detection via Sentinel Hub EO Browser.</p>
           </div>
           <div class="about-card">
-            <div class="about-card-icon">🤖</div>
-            <h4>Automation</h4>
-            <p>Python-based workflow automation for repetitive spatial data processing tasks</p>
+            <div class="about-card-icon"><i class="fas fa-code"></i></div>
+            <h4>Custom GIS &amp; DEM Tools</h4>
+            <p>PyQGIS development: DEM modification &amp; channel burning tools for hydraulic workflows, dual-mode DEM comparison with Excel dashboards, auto cross-sections, and stream ordering.</p>
           </div>
           <div class="about-card">
-            <div class="about-card-icon">🚁</div>
-            <h4>Drone Surveys</h4>
-            <p>Processing orthophotos, DSM, DTM from drone survey data</p>
+            <div class="about-card-icon"><i class="fas fa-mountain"></i></div>
+            <h4>Terrain &amp; Cadastral GIS</h4>
+            <p>DEM/DSM/DTM analysis, survey-derived raster surfaces for solar plotting, drone orthophoto processing, and revenue cadastral plot digitization.</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AREAS OF EXPERTISE ===== -->
+  <section id="expertise" class="expertise-section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">Core Competencies</div>
+        <h2 class="section-title">Areas of Expertise</h2>
+        <p class="section-desc">15 specialized domain capabilities verified across municipal, government, and insurance projects</p>
+      </div>
+      <div class="expertise-cards-grid reveal">
+        <div class="expertise-block">
+          <div class="expertise-block-header">
+            <i class="fas fa-tint"></i>
+            <h3>Hydrological GIS &amp; Catchments</h3>
+          </div>
+          <ul class="expertise-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Catchment &amp; Watershed Delineation</strong> — Using QGIS and ArcMap, supported by basic HEC-HMS workflows</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Drainage &amp; Stream Ordering</strong> — Stream order classification (Strahler), flow pathways, and drainage density</li>
+            <li><i class="fas fa-check-circle"></i> <strong>DEM Development &amp; Modification</strong> — Preparing, conditioning, and modifying DEMs for hydraulic workflows (HEC-RAS)</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Flood Inundation Mapping</strong> — Spatial mapping and cartographic preparation of flood hazard extents</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Model Result Spatial Presentation</strong> — Translating HEC-HMS and HEC-RAS model outputs into presentation-grade GIS maps</li>
+          </ul>
+        </div>
+
+        <div class="expertise-block">
+          <div class="expertise-block-header">
+            <i class="fas fa-satellite-dish"></i>
+            <h3>Remote Sensing &amp; Terrain</h3>
+          </div>
+          <ul class="expertise-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Sentinel-1 SAR Flood Mapping</strong> — Backscatter change &amp; threshold classification</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Multi-date Change Detection</strong> — Satellite time-lapse analysis via Sentinel Hub</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Crop Classification &amp; Assessment</strong> — Insurance unit yield &amp; damage estimation</li>
+            <li><i class="fas fa-check-circle"></i> <strong>DEM / DSM / DTM Analysis</strong> — Slope, aspect, elevation, and contour modeling</li>
+            <li><i class="fas fa-check-circle"></i> <strong>LULC, Soil &amp; Topographic Mapping</strong> — Multi-spectral image classification</li>
+          </ul>
+        </div>
+
+        <div class="expertise-block">
+          <div class="expertise-block-header">
+            <i class="fas fa-cogs"></i>
+            <h3>GIS Engineering &amp; Automation</h3>
+          </div>
+          <ul class="expertise-list">
+            <li><i class="fas fa-check-circle"></i> <strong>CAD to Vector to Raster Modeling</strong> — Transforming client CAD master plans into GIS vectors and high-resolution grading rasters</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Cadastral &amp; Plot Layouts</strong> — Plot digitization, area computation, village/gamtal boundary matching &amp; revenue validation</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Georeferencing &amp; Coordinate Systems</strong> — UTM, WGS84, state plane transformations &amp; spatial alignment</li>
+            <li><i class="fas fa-check-circle"></i> <strong>GIS Automation &amp; Custom Tools</strong> — PyQGIS scripts &amp; repeatable processing pipelines for elevation analysis</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Thematic Mapping &amp; Map QA</strong> — Corporate layouts, municipal atlas generation &amp; strict SOP delivery</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -126,67 +240,98 @@
       <div class="section-header reveal">
         <div class="section-label">What I Know</div>
         <h2 class="section-title">Technical Skills</h2>
-        <p class="section-desc">A comprehensive toolkit for geospatial analysis and automation</p>
+        <p class="section-desc">Enterprise software, remote sensing platforms, hydraulic engines, and Python scripting</p>
       </div>
       <div class="skills-grid">
         <div class="skill-card reveal">
-          <div class="skill-icon geo">🌐</div>
+          <div class="skill-icon geo"><i class="fas fa-globe-americas"></i></div>
           <h3>GIS Software</h3>
+          <p class="skill-card-sub">Desktop &amp; Enterprise GIS</p>
           <div class="skill-tags">
             <span class="skill-tag">QGIS</span>
             <span class="skill-tag">ArcGIS</span>
             <span class="skill-tag">ArcGIS Pro</span>
+            <span class="skill-tag">Erdas Imagine</span>
+            <span class="skill-tag">Google Earth Pro</span>
+            <span class="skill-tag">Google Earth Studio</span>
             <span class="skill-tag">Geodatabases</span>
           </div>
         </div>
+
         <div class="skill-card reveal">
-          <div class="skill-icon rs">📡</div>
+          <div class="skill-icon rs"><i class="fas fa-satellite"></i></div>
           <h3>Remote Sensing</h3>
+          <p class="skill-card-sub">Optical &amp; Radar Imagery</p>
           <div class="skill-tags">
-            <span class="skill-tag">SAR Analysis</span>
-            <span class="skill-tag">Satellite Imagery</span>
-            <span class="skill-tag">Image Classification</span>
+            <span class="skill-tag">Google Earth Engine</span>
+            <span class="skill-tag">Sentinel Hub EO Browser</span>
+            <span class="skill-tag">Sentinel-1 SAR</span>
+            <span class="skill-tag">Sentinel-2 MSI</span>
+            <span class="skill-tag">Multi-temporal Imagery</span>
             <span class="skill-tag">Change Detection</span>
+            <span class="skill-tag">NDVI Indices</span>
           </div>
         </div>
+
         <div class="skill-card reveal">
-          <div class="skill-icon code">💻</div>
-          <h3>Programming</h3>
+          <div class="skill-icon code"><i class="fas fa-terminal"></i></div>
+          <h3>Automation &amp; Scripting</h3>
+          <p class="skill-card-sub">Custom Tools &amp; Pipelines</p>
           <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">GIS Automation</span>
-            <span class="skill-tag">Scripting</span>
-            <span class="skill-tag">Data Processing</span>
+            <span class="skill-tag">Python for GIS</span>
+            <span class="skill-tag">PyQGIS</span>
+            <span class="skill-tag">GDAL / OGR</span>
+            <span class="skill-tag">SciPy (cKDTree)</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">OpenPyXL Dashboards</span>
+            <span class="skill-tag">DEM Modification</span>
+            <span class="skill-tag">Batch Conversions</span>
           </div>
         </div>
+
         <div class="skill-card reveal">
-          <div class="skill-icon survey">📐</div>
-          <h3>Survey & Mapping</h3>
+          <div class="skill-icon survey"><i class="fas fa-water"></i></div>
+          <h3>Hydrological GIS</h3>
+          <p class="skill-card-sub">Catchments, Drainage &amp; DEMs</p>
           <div class="skill-tags">
-            <span class="skill-tag">Drone Data</span>
+            <span class="skill-tag">Catchment Delineation</span>
+            <span class="skill-tag">Stream Ordering (Strahler)</span>
+            <span class="skill-tag">QGIS &amp; ArcMap Hydrology</span>
+            <span class="skill-tag">Basic HEC-HMS (Catchment)</span>
+            <span class="skill-tag">HEC-RAS (DEM Modification)</span>
+            <span class="skill-tag">Flood Inundation Mapping</span>
+            <span class="skill-tag">Model Result Cartography</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon data"><i class="fas fa-layer-group"></i></div>
+          <h3>Terrain, Master Plans &amp; Survey</h3>
+          <p class="skill-card-sub">CAD to Vector &amp; Raster Modeling</p>
+          <div class="skill-tags">
+            <span class="skill-tag">CAD to GIS Vectors</span>
+            <span class="skill-tag">Master Plan Raster Modeling</span>
+            <span class="skill-tag">DEM / DSM / DTM</span>
             <span class="skill-tag">Orthophotos</span>
-            <span class="skill-tag">DSM / DTM</span>
-            <span class="skill-tag">GPS Mapping</span>
+            <span class="skill-tag">Plot Grading Rasters</span>
+            <span class="skill-tag">Slope &amp; Elevation</span>
+            <span class="skill-tag">Volumetrics</span>
+            <span class="skill-tag">Contour Extraction</span>
           </div>
         </div>
+
         <div class="skill-card reveal">
-          <div class="skill-icon data">📊</div>
-          <h3>Spatial Analysis</h3>
+          <div class="skill-icon viz"><i class="fas fa-file-invoice"></i></div>
+          <h3>Reporting &amp; Delivery</h3>
+          <p class="skill-card-sub">QA/QC &amp; SOP Compliance</p>
           <div class="skill-tags">
-            <span class="skill-tag">Hydrology</span>
-            <span class="skill-tag">Flood Mapping</span>
-            <span class="skill-tag">Terrain Analysis</span>
-            <span class="skill-tag">Thematic Maps</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon viz">📝</div>
-          <h3>Other Tools</h3>
-          <div class="skill-tags">
+            <span class="skill-tag">Technical Reporting</span>
+            <span class="skill-tag">SOP Compliance</span>
+            <span class="skill-tag">Map QA/QC</span>
+            <span class="skill-tag">Cadastral Validation</span>
             <span class="skill-tag">MS Office</span>
-            <span class="skill-tag">Report Writing</span>
-            <span class="skill-tag">Map Preparation</span>
-            <span class="skill-tag">Data QA/QC</span>
+            <span class="skill-tag">Excel Reporting Engines</span>
+            <span class="skill-tag">Client Delivery</span>
           </div>
         </div>
       </div>
@@ -199,153 +344,520 @@
       <div class="section-header reveal">
         <div class="section-label">Where I've Worked</div>
         <h2 class="section-title">Professional Experience</h2>
-        <p class="section-desc">3+ years of delivering high-impact geospatial solutions</p>
+        <p class="section-desc">3+ years delivering mission-critical geospatial solutions for municipal authorities, central government agencies, and engineering firms</p>
       </div>
       <div class="timeline">
+
+        <!-- Atomep Enteam -->
         <div class="timeline-item reveal-left">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">March 2024 — Present</span>
+            <div class="timeline-header">
+              <span class="timeline-date">Mar 2024 — Present</span>
+              <span class="company-badge">Current Role</span>
+            </div>
             <h3>GIS Specialist</h3>
-            <div class="company">Atomep Enteam Pvt. Ltd.</div>
+            <div class="company"><i class="fas fa-building"></i> Atomep Enteam Pvt. Ltd.</div>
+            <div class="role-location"><i class="fas fa-map-marker-alt"></i> Ahmedabad, Gujarat</div>
             <ul>
-              <li>Working on GIS analysis, remote-sensing-based flood mapping, drone survey processing, and hydrology-related projects</li>
-              <li>Creating maps, spatial models, and automated workflows for client deliverables</li>
-              <li>Responsible for data quality checks (QA/QC) and ensuring spatial data integrity</li>
+              <li>Deliver GIS and spatial-analysis outputs for municipal, government urban-development, infrastructure, water-resource, solar-site and land-development assignments, including projects for <strong>AMC, GMC, SMC, and GUDM</strong>.</li>
+              <li><strong>Develop GIS master plans and plot schemes for premier corporate industrial and real estate developers</strong>: converting client-supplied CAD drawings and layouts into georeferenced GIS vector datasets, and generating high-resolution raster elevation/grading models for site feasibility.</li>
+              <li>Conduct initial site assessments covering <strong>catchment delineation, drainage evaluation, terrain and topographic mapping</strong>, and soil and LULC analysis where required.</li>
+              <li>Prepare <strong>thematic maps and spatial outputs from flood studies and hydraulic-model results (HEC-HMS / HEC-RAS)</strong> to support technical review and infrastructure planning.</li>
+              <li><strong>Mapped approximately 800 water-related structures</strong> for an infrastructure and asset inventory, maintaining consistent geometry and organized feature attributes.</li>
+              <li>Support solar-site assessments and plotting schemes by <strong>processing survey-derived elevation data into raster surfaces</strong> for existing ground and client-defined proposed/post-development conditions.</li>
+              <li><strong>Architect and develop proprietary PyQGIS tools</strong>, including a HEC-RAS-style Trapezoidal Channel Designer (3D DEM burning with KD-Tree medial projection) and an automated Dual-Mode DEM Comparison Engine with OpenPyXL Excel dashboard generation for cut/fill analysis.</li>
+              <li>Apply company SOPs for data processing, file organization, quality checks, map preparation and client-ready delivery.</li>
             </ul>
+            <div class="role-tags">
+              <span>AMC</span><span>GMC</span><span>SMC</span><span>GUDM</span><span>CAD-to-Vector-to-Raster</span><span>Master Plans</span><span>PyQGIS</span><span>DEM Analysis</span>
+            </div>
           </div>
         </div>
+
+        <!-- AIC of India -->
         <div class="timeline-item reveal-left">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">September 2023 — February 2024</span>
-            <h3>Remote Sensing & GIS Specialist</h3>
-            <div class="company">AIC of India</div>
+            <div class="timeline-header">
+              <span class="timeline-date">Sep 2023 — Feb 2024</span>
+              <span class="company-badge govt">Govt Corporation</span>
+            </div>
+            <h3>Remote Sensing &amp; GIS Specialist</h3>
+            <div class="company"><i class="fas fa-shield-alt"></i> Agriculture Insurance Company of India Limited (AICL)</div>
+            <div class="role-location"><i class="fas fa-map-marker-alt"></i> Ahmedabad / New Delhi</div>
             <ul>
-              <li>Conducted spatial analysis for agriculture and environmental monitoring</li>
-              <li>Worked on large geospatial datasets and thematic mapping projects</li>
-              <li>Developed workflows for satellite data processing and analysis</li>
+              <li><strong>Integrated cadastral boundaries, administrative units and satellite imagery</strong> for insurance-unit-level mapping in support of agricultural insurance schemes (PMFBY).</li>
+              <li>Conducted <strong>crop-area assessment and crop classification</strong> using multi-temporal satellite imagery.</li>
+              <li>Analyzed <strong>crop health, vegetative indices (NDVI), and damage patterns</strong> to support yield estimation and insurance claim assessment.</li>
+              <li>Developed <strong>geospatial databases, thematic maps and analytical reports</strong> for scheme implementation, insurance planning and risk evaluation.</li>
             </ul>
+            <div class="role-tags">
+              <span>Cadastral GIS</span><span>Multi-Temporal RS</span><span>Crop Classification</span><span>Yield Estimation</span><span>Insurance Mapping</span>
+            </div>
           </div>
         </div>
+
+        <!-- Amnex Info Technologies -->
         <div class="timeline-item reveal-left">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">January 2023 — March 2023</span>
-            <h3>Internship Trainee</h3>
-            <div class="company">Amnex Info Technologies Pvt. Ltd.</div>
+            <div class="timeline-header">
+              <span class="timeline-date">Jan 2023 — Mar 2023</span>
+              <span class="company-badge intern">Internship Trainee</span>
+            </div>
+            <h3>Internship Trainee — Geospatial &amp; SAR</h3>
+            <div class="company"><i class="fas fa-satellite"></i> Amnex Info Technologies Pvt. Ltd.</div>
+            <div class="role-project-name">
+              <i class="fas fa-project-diagram"></i> Project: SAR-Based Flood Inundation Mapping and Agricultural Impact Assessment, Assam Floods (2022)
+            </div>
             <ul>
-              <li>Worked on Flood Mapping & Monitoring using SAR Data</li>
-              <li>Assessed agricultural impact through satellite-based spatial analysis</li>
-              <li>Gained hands-on experience with SAR data processing and interpretation</li>
+              <li>Processed <strong>multi-temporal Sentinel-1 SAR imagery in Google Earth Engine (GEE)</strong>, applying speckle filtering, pre-, during- and post-flood comparison, backscatter change detection and threshold-based classification to delineate flood inundation.</li>
+              <li>Prepared <strong>phase-wise and combined flood-extent maps</strong>, rainfall-pattern maps and district-wise agricultural impact maps for the 2022 Assam flood events.</li>
             </ul>
+            <div class="role-tags">
+              <span>Sentinel-1 SAR</span><span>Google Earth Engine</span><span>Speckle Filtering</span><span>Assam Floods</span><span>Agricultural Impact</span>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
+  <!-- ===== KEY PROJECTS ===== -->
   <section id="projects">
     <div class="section-container">
       <div class="section-header reveal">
-        <div class="section-label">What I've Built</div>
+        <div class="section-label">Real-World Impact</div>
         <h2 class="section-title">Key Projects</h2>
-        <p class="section-desc">Real-world geospatial solutions from flood mapping to drone analytics</p>
+        <p class="section-desc">End-to-end geospatial assignments executed for municipal corporations, state missions, and disaster evaluation</p>
       </div>
+
+      <!-- Project Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="flood">Municipal &amp; Flood</button>
+        <button class="filter-btn" data-filter="tools">GIS Tools &amp; Automation</button>
+        <button class="filter-btn" data-filter="rs">Remote Sensing</button>
+        <button class="filter-btn" data-filter="urban">Master Plans &amp; Cadastral</button>
+      </div>
+
       <div class="projects-grid">
-        <div class="project-card reveal">
-          <div class="project-banner flood">🌊</div>
-          <div class="project-body">
-            <h3>Flood Mapping & Monitoring Using SAR Data</h3>
-            <p>Processed SAR satellite data to map and monitor flood extents, assessing agricultural impact in affected regions using advanced remote sensing techniques.</p>
-            <div class="project-tags">
-              <span class="project-tag">SAR Data</span>
-              <span class="project-tag">Flood Analysis</span>
-              <span class="project-tag">Agriculture Impact</span>
-              <span class="project-tag">Remote Sensing</span>
+
+        <!-- Project 1: AMC / GMC Municipal Flood -->
+        <div class="project-card reveal" data-category="flood urban">
+          <div class="project-banner flood">
+            <div class="banner-overlay">
+              <i class="fas fa-water"></i>
+              <span class="client-tag">Client: AMC / GMC</span>
             </div>
           </div>
-        </div>
-        <div class="project-card reveal">
-          <div class="project-banner hydro">💧</div>
           <div class="project-body">
-            <h3>Hydrological Analysis & Mapping</h3>
-            <p>Conducted comprehensive hydrology-related geospatial projects including watershed delineation, drainage analysis, and water resource assessment.</p>
+            <div class="project-cat-badge">Municipal Flood GIS</div>
+            <h3>Municipal Flood &amp; Amenity Mapping</h3>
+            <p>
+              Prepared comprehensive flood inundation maps for multiple return periods for Ahmedabad Municipal Corporation (AMC). Mapped critical public amenities and transport infrastructure, including hospitals, bridges, underpasses, BRTS corridors, post offices, Sardar Vallabhbhai Patel International Airport, metro corridors, and railway junctions.
+            </p>
+            <div class="project-meta-list">
+              <div><i class="fas fa-check"></i> Multi-return period flood inundation mapping</div>
+              <div><i class="fas fa-check"></i> Transport &amp; critical infrastructure overlays</div>
+            </div>
             <div class="project-tags">
-              <span class="project-tag">Hydrology</span>
-              <span class="project-tag">DEM Processing</span>
-              <span class="project-tag">Watershed</span>
+              <span class="project-tag">AMC</span>
+              <span class="project-tag">GMC</span>
+              <span class="project-tag">Flood Inundation</span>
+              <span class="project-tag">Infrastructure GIS</span>
               <span class="project-tag">QGIS</span>
             </div>
           </div>
         </div>
-        <div class="project-card reveal">
-          <div class="project-banner drone">🚁</div>
+
+        <!-- Project 2: SMC Creek Flood -->
+        <div class="project-card reveal" data-category="flood rs">
+          <div class="project-banner hydro">
+            <div class="banner-overlay">
+              <i class="fas fa-satellite-dish"></i>
+              <span class="client-tag">Client: SMC</span>
+            </div>
+          </div>
           <div class="project-body">
-            <h3>Drone Survey Data Processing</h3>
-            <p>Processed drone survey data to generate orthophotos, DSM, and DTM products for terrain analysis, site planning, and volumetric calculations.</p>
+            <div class="project-cat-badge">Hydraulics &amp; RS</div>
+            <h3>Creek Flood Mapping &amp; Change Analysis</h3>
+            <p>
+              Mapped creek-water polygons and performed detailed width variation analysis along sensitive coastal and municipal channels for Surat Municipal Corporation (SMC). Prepared hydraulic thematic maps and executed temporal change detection using multi-date satellite imagery from Sentinel Hub EO Browser.
+            </p>
+            <div class="project-meta-list">
+              <div><i class="fas fa-check"></i> Channel width variation computation</div>
+              <div><i class="fas fa-check"></i> Sentinel Hub EO Browser time-series</div>
+            </div>
             <div class="project-tags">
-              <span class="project-tag">Drone Survey</span>
-              <span class="project-tag">Orthophoto</span>
-              <span class="project-tag">DSM / DTM</span>
-              <span class="project-tag">Terrain</span>
+              <span class="project-tag">SMC</span>
+              <span class="project-tag">Creek Hydraulics</span>
+              <span class="project-tag">Sentinel Hub</span>
+              <span class="project-tag">Change Detection</span>
+              <span class="project-tag">Surat</span>
             </div>
           </div>
         </div>
-        <div class="project-card reveal">
-          <div class="project-banner agri">🌾</div>
-          <div class="project-body">
-            <h3>Agriculture & Environmental Monitoring</h3>
-            <p>Spatial analysis for agriculture and environmental monitoring using satellite imagery, thematic mapping, and large-scale geospatial datasets.</p>
-            <div class="project-tags">
-              <span class="project-tag">Agriculture</span>
-              <span class="project-tag">Environment</span>
-              <span class="project-tag">Satellite Data</span>
-              <span class="project-tag">Thematic Maps</span>
+
+        <!-- Project 3: GUDM Multi-District -->
+        <div class="project-card reveal" data-category="urban rs">
+          <div class="project-banner agri">
+            <div class="banner-overlay">
+              <i class="fas fa-map-marked-alt"></i>
+              <span class="client-tag">Client: GUDM</span>
             </div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat-badge">State Mission</div>
+            <h3>Multi-District GIS &amp; Topographic Mapping</h3>
+            <p>
+              Delivered enterprise-scale terrain and topographic mapping, catchment assessment, soil classification, and land-use/land-cover (LULC) mapping across multiple districts for the Gujarat Urban Development Mission (GUDM). Ensured consistent coordinate systems and schema standards across large district datasets.
+            </p>
+            <div class="project-meta-list">
+              <div><i class="fas fa-check"></i> District-scale terrain &amp; catchment mapping</div>
+              <div><i class="fas fa-check"></i> LULC &amp; soil thematic cartography</div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">GUDM</span>
+              <span class="project-tag">District Mapping</span>
+              <span class="project-tag">Catchment</span>
+              <span class="project-tag">LULC</span>
+              <span class="project-tag">Topography</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Master Plan CAD-to-Vector-to-Raster & Cadastral -->
+        <div class="project-card reveal" data-category="urban">
+          <div class="project-banner drone">
+            <div class="banner-overlay">
+              <i class="fas fa-vector-square"></i>
+              <span class="client-tag">Corporate Master Plans &amp; Schemes</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat-badge">Master Planning &amp; Cadastral</div>
+            <h3>Master Plan CAD-to-GIS &amp; Raster Development</h3>
+            <p>
+              Developed georeferenced spatial databases for extensive corporate industrial layouts, real estate master plans, and cadastral schemes. Translated raw client CAD drawings into topology-verified GIS vector plots, verified parcel areas, and generated high-resolution raster elevation/grading models for site feasibility and grading planning.
+            </p>
+            <div class="project-meta-list">
+              <div><i class="fas fa-check"></i> CAD to georeferenced GIS vector conversion &amp; topology QA</div>
+              <div><i class="fas fa-check"></i> Proposed raster elevation &amp; grading surface modeling</div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Master Plans</span>
+              <span class="project-tag">CAD to Vector</span>
+              <span class="project-tag">Raster Grading</span>
+              <span class="project-tag">Plot Layouts</span>
+              <span class="project-tag">Area Audits</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Assam Floods 2022 SAR -->
+        <div class="project-card reveal" data-category="flood rs">
+          <div class="project-banner flood">
+            <div class="banner-overlay">
+              <i class="fas fa-cloud-showers-heavy"></i>
+              <span class="client-tag">Amnex / Disasters</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat-badge">SAR Remote Sensing</div>
+            <h3>SAR Flood Inundation &amp; Agricultural Impact</h3>
+            <p>
+              Processed multi-temporal Sentinel-1 Synthetic Aperture Radar (SAR) imagery in Google Earth Engine to monitor the catastrophic 2022 Assam floods. Applied Lee speckle filtering, pre- and post-flood backscatter thresholding, and delineated flood extents across affected districts to assess agricultural crop loss.
+            </p>
+            <div class="project-meta-list">
+              <div><i class="fas fa-check"></i> Cloud-penetrating Sentinel-1 SAR GEE pipeline</div>
+              <div><i class="fas fa-check"></i> Phase-wise crop damage &amp; rainfall correlation</div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Sentinel-1 SAR</span>
+              <span class="project-tag">Google Earth Engine</span>
+              <span class="project-tag">Flood Hazard</span>
+              <span class="project-tag">Assam Floods</span>
+              <span class="project-tag">Thresholding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Custom QGIS Automation Tools -->
+        <div class="project-card reveal" data-category="tools flood">
+          <div class="project-banner hydro">
+            <div class="banner-overlay">
+              <i class="fas fa-laptop-code"></i>
+              <span class="client-tag">In-House Engineering</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat-badge">PyQGIS &amp; Terrain GIS</div>
+            <h3>DEM Modification &amp; Elevation Profiling Suite</h3>
+            <p>
+              Architected and built specialized PyQGIS engineering tools for elevation and hydraulic workflows: a <strong>Trapezoidal Channel Designer</strong> that modifies and burns 3D canal beds into DEMs using HEC-RAS style "Dig Only" (min elevation) logic and SciPy cKDTree medial-axis projection, plus a <strong>Dual-Mode DEM Comparison Engine</strong> with automated OpenPyXL executive Excel dashboards and profile charts.
+            </p>
+            <div class="project-meta-list">
+              <div><i class="fas fa-check"></i> 3D Canal DEM modification &amp; culvert grading</div>
+              <div><i class="fas fa-check"></i> Automated Excel cut/fill dashboards &amp; charts</div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">PyQGIS</span>
+              <span class="project-tag">DEM Modification</span>
+              <span class="project-tag">HEC-RAS Logic</span>
+              <span class="project-tag">OpenPyXL</span>
+              <span class="project-tag">cKDTree</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUSTOM GIS TOOLS SHOWCASE ===== -->
+  <section id="tools" class="tools-section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">Developer Portfolio</div>
+        <h2 class="section-title">Custom GIS Tools &amp; Scripts</h2>
+        <p class="section-desc">Proprietary PyQGIS plugins and geospatial automation tools built to accelerate engineering pipelines</p>
+      </div>
+
+      <div class="tools-grid reveal">
+        <!-- Tool 1: Raster Post-Development Grading Engine -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-drafting-compass"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">01.</span> Raster Post-Development Grading Engine</h4>
+            <p>Develops proposed elevation raster surfaces for plots, boundary walls, and internal roads, generating graded terrain models directly from layout attributes or custom elevation inputs.</p>
+            <div class="tool-badge">Terrain Grading Tool</div>
+          </div>
+        </div>
+
+        <!-- Tool 2: Trapezoidal Channel DEM Designer -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-stream"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">02.</span> Trapezoidal Channel DEM Designer</h4>
+            <p>Modifies and burns 3D trapezoidal channels directly into DEM rasters for hydraulic modeling, built with HEC-RAS style "Dig Only" (min elevation) logic and cKDTree orthogonal projection.</p>
+            <div class="tool-badge">PyQGIS DEM Tool</div>
+          </div>
+        </div>
+
+        <!-- Tool 3: DEM Mosaic Tool -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">03.</span> DEM &amp; Elevation Mosaic Engine</h4>
+            <p>Seamlessly merges and mosaics adjacent or overlapping DEM and elevation raster tiles directly in QGIS, eliminating edge boundary steps and producing unified elevation surfaces.</p>
+            <div class="tool-badge">Elevation Processing</div>
+          </div>
+        </div>
+
+        <!-- Tool 4: Raster Boundary Extractor -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-crop-alt"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">04.</span> Universal Raster Boundary Extractor</h4>
+            <p>Extracts precise non-null boundary footprints and boundary polygons from any raster dataset, including drone orthophotos, DEMs, DSMs, and multi-spectral satellite imagery.</p>
+            <div class="tool-badge">Raster Footprint Tool</div>
+          </div>
+        </div>
+
+        <!-- Tool 5: LULC Raster to Vector Classifier & Styler -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-vector-square"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">05.</span> LULC Raster-to-Vector Classifier &amp; Styler</h4>
+            <p>Converts classified LULC rasters into clean vector layers, managing and classifying all feature codes into attributes, and automatically loading the output with synchronized QGIS symbology.</p>
+            <div class="tool-badge">LULC Conversion Tool</div>
+          </div>
+        </div>
+
+        <!-- Tool 6: Flow Direction & Stream Order Flow Animator -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-water"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">06.</span> Flow Direction &amp; Stream Order Animator</h4>
+            <p>Extracts Strahler stream orders into vector attributes and generates animated GIF flow visualizations, rendering dynamic width-scaled and color-coded line pulses to present water flow direction.</p>
+            <div class="tool-badge">QGIS Animation Tool</div>
+          </div>
+        </div>
+
+        <!-- Tool 7: Batch SHP to KMZ Tool -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-file-export"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">07.</span> Batch SHP to KMZ with Symbology &amp; Labels</h4>
+            <p>Batch exports single or multiple Shapefiles into styled Google Earth KMZ files, preserving native QGIS categorized symbology, color schemes, opacity, and dynamic label expressions.</p>
+            <div class="tool-badge">ETL &amp; KMZ Pipeline</div>
+          </div>
+        </div>
+
+        <!-- Tool 8: Location Search Bar -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-search-location"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">08.</span> Universal Location Search Bar</h4>
+            <p>Omni-search panel for QGIS like Google Earth Pro: parses any coordinate format (DMS, UTM, MGRS, Plus Codes, web map links), provides live geocoding (Photon, Nominatim, Esri), queries loaded layer attributes, and shows place cards with Street View links.</p>
+            <div class="tool-badge">QGIS GUI Plugin</div>
+          </div>
+        </div>
+
+        <!-- Tool 9: Coordinate System & Geometry Tool -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-map-pin"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">09.</span> Direct Coordinate Geometry Injector</h4>
+            <p>Directly injects and manages Latitude/Longitude coordinates into Point, Line, and Polygon features, enabling rapid coordinate assignment, vertex editing, and spatial attribute updating.</p>
+            <div class="tool-badge">Vector Geometry Tool</div>
+          </div>
+        </div>
+
+        <!-- Tool 10: Auto Cross Section & Excel Profile Engine -->
+        <div class="tool-item">
+          <div class="tool-icon"><i class="fas fa-ruler-combined"></i></div>
+          <div class="tool-details">
+            <h4><span class="tool-num">10.</span> Auto Cross-Section &amp; Excel Profile Engine</h4>
+            <p>Directly extracts terrain elevation profiles along cross-section cut lines from DEMs, automatically generating formatted Excel workbooks with high-clarity terrain profile graphs and station-elevation data tables.</p>
+            <div class="tool-badge">Profile &amp; Excel Engine</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== EDUCATION ===== -->
-  <section id="education">
+  <!-- ===== ACHIEVEMENTS & CERTIFICATIONS ===== -->
+  <section id="achievements">
     <div class="section-container">
       <div class="section-header reveal">
-        <div class="section-label">My Learning Path</div>
-        <h2 class="section-title">Education</h2>
-        <p class="section-desc">Academic foundation in Geoinformatics and Science</p>
+        <div class="section-label">Honors &amp; Credentials</div>
+        <h2 class="section-title">Achievements &amp; Certifications</h2>
+        <p class="section-desc">National-level open-source GIS recognition and specialized remote sensing training</p>
       </div>
-      <div class="edu-grid">
-        <div class="edu-card reveal">
-          <div class="edu-icon">🎓</div>
-          <h3>M.Sc. Geoinformatics</h3>
-          <div class="edu-inst">Gujarat University</div>
-          <div class="edu-year">2023</div>
-          <span class="edu-score">65.60%</span>
+
+      <div class="achieve-grid">
+        <!-- IITB Mapathon Winner -->
+        <div class="achieve-card reveal-left">
+          <div class="achieve-card-header">
+            <div class="achieve-icon trophy"><i class="fas fa-trophy"></i></div>
+            <div class="achieve-badge">National Winner</div>
+          </div>
+          <h3>Winner, IITB-AICTE Mapathon 2022</h3>
+          <div class="achieve-org">FOSSEE, IIT Bombay &amp; AICTE</div>
+          <p class="achieve-desc">
+            Recognized as a winner, as part of a three-member team, for the thematic map <strong>“Indian State Health Indicator”</strong> in a prestigious national-level open-source geospatial mapping competition held from 22 February to 29 March 2022. Evaluated on cartographic precision, open-source data harmonization, and analytical depth.
+          </p>
+          <div class="achieve-footer">
+            <span><i class="fas fa-award"></i> IIT Bombay &amp; AICTE</span>
+            <span><i class="fas fa-calendar-alt"></i> 2022</span>
+          </div>
         </div>
-        <div class="edu-card reveal">
-          <div class="edu-icon">🔬</div>
-          <h3>B.Sc. Botany</h3>
-          <div class="edu-inst">Gujarat University</div>
-          <div class="edu-year">2021</div>
-          <span class="edu-score">60%</span>
+
+        <!-- ISRO Certification -->
+        <div class="achieve-card reveal-right">
+          <div class="achieve-card-header">
+            <div class="achieve-icon isro"><i class="fas fa-satellite"></i></div>
+            <div class="achieve-badge cert">Govt Certification</div>
+          </div>
+          <h3>Geospatial Technology for Climate Smart Agriculture</h3>
+          <div class="achieve-org">IIRS, ISRO, Dehradun</div>
+          <p class="achieve-desc">
+            Five-day intensive technical certification conducted by the <strong>Indian Institute of Remote Sensing (IIRS, ISRO)</strong> from 10 to 14 July 2023 (7.5 hours). Covered satellite crop monitoring, agro-meteorological forecasting, drought indices, and remote sensing applications in climate-resilient agriculture.
+          </p>
+          <div class="achieve-footer">
+            <span><i class="fas fa-certificate"></i> IIRS, ISRO</span>
+            <span><i class="fas fa-calendar-alt"></i> July 2023</span>
+          </div>
         </div>
-        <div class="edu-card reveal">
-          <div class="edu-icon">📘</div>
-          <h3>12th Science (HSC)</h3>
-          <div class="edu-inst">GSEB</div>
-          <div class="edu-year">2018</div>
-          <span class="edu-score">56%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & LANGUAGES ===== -->
+  <section id="education" class="edu-lang-section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-label">Academic Foundations</div>
+        <h2 class="section-title">Education &amp; Languages</h2>
+        <p class="section-desc">Rigorous academic background bridging spatial technology and botanical sciences</p>
+      </div>
+
+      <div class="edu-lang-grid">
+        <div class="edu-container reveal-left">
+          <h3 class="subsection-title"><i class="fas fa-user-graduate"></i> Academic Qualifications</h3>
+          
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-body">
+              <div class="edu-header">
+                <h4>M.Sc. Geoinformatics</h4>
+                <span class="edu-year">2021 — 2023</span>
+              </div>
+              <div class="edu-inst">Gujarat University, Ahmedabad</div>
+              <div class="edu-grade"><i class="fas fa-star"></i> First Class (65.60%)</div>
+              <p class="edu-summary">Specialized in GIS database design, satellite remote sensing, photogrammetry, digital image processing, and spatial Python scripting.</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-leaf"></i></div>
+            <div class="edu-body">
+              <div class="edu-header">
+                <h4>B.Sc. Botany</h4>
+                <span class="edu-year">2018 — 2021</span>
+              </div>
+              <div class="edu-inst">Gujarat University, Ahmedabad</div>
+              <div class="edu-grade"><i class="fas fa-star"></i> First Class (60.00%)</div>
+              <p class="edu-summary">Provided foundational knowledge in plant ecology, vegetative physiology, and environmental monitoring, directly enriching remote sensing analysis.</p>
+            </div>
+          </div>
         </div>
-        <div class="edu-card reveal">
-          <div class="edu-icon">📗</div>
-          <h3>10th (SSC)</h3>
-          <div class="edu-inst">GSEB</div>
-          <div class="edu-year">2016</div>
-          <span class="edu-score">64%</span>
+
+        <div class="lang-container reveal-right">
+          <h3 class="subsection-title"><i class="fas fa-language"></i> Languages Known</h3>
+          <div class="lang-card">
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name">Gujarati</span>
+                <span class="lang-level">Native</span>
+              </div>
+              <div class="lang-bar"><div class="lang-progress" style="width: 100%;"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-level">Fluent</span>
+              </div>
+              <div class="lang-bar"><div class="lang-progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name">English</span>
+                <span class="lang-level">Professional Working</span>
+              </div>
+              <div class="lang-bar"><div class="lang-progress" style="width: 85%;"></div></div>
+            </div>
+          </div>
+
+          <div class="cv-quick-card">
+            <div class="cv-quick-icon"><i class="fas fa-file-alt"></i></div>
+            <div class="cv-quick-body">
+              <h4>Official Curriculum Vitae</h4>
+              <p>Updated 2-page executive format detailing government client projects, certifications, and technical proficiencies.</p>
+              <div class="cv-quick-actions">
+                <a href="Rakesh_Solanki_Resume.pdf" download="Rakesh_Solanki_Geospatial_Analyst_Resume.pdf" class="btn-cv-download">
+                  <i class="fas fa-download"></i> Download PDF
+                </a>
+                <a href="cv.html" target="_blank" class="btn-cv-view">
+                  <i class="fas fa-external-link-alt"></i> Web View
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -357,74 +869,132 @@
       <div class="section-header reveal">
         <div class="section-label">Let's Connect</div>
         <h2 class="section-title">Get In Touch</h2>
-        <p class="section-desc">Open to GIS, Remote Sensing, and geospatial automation opportunities</p>
+        <p class="section-desc">Open to Geospatial Analyst, Remote Sensing Specialist, and GIS Automation roles</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal-left">
-          <h3>Let's work together</h3>
-          <p>Feel free to reach out for opportunities, collaborations, or just to say hello. I'm always excited to discuss geospatial projects and innovative solutions.</p>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-            <div class="contact-item-text">
-              <span>Phone</span>
-              <a href="tel:+918200469254">+91 8200469254</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div class="contact-item-text">
-              <span>Email</span>
-              <a href="mailto:rakeshsolanki001160@gmail.com">rakeshsolanki001160@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="contact-item-text">
-              <span>Location</span>
-              <p>Ahmedabad, Gujarat, India</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-            <div class="contact-item-text">
-              <span>LinkedIn</span>
-              <a href="https://www.linkedin.com/in/rakesh-solanki-30ba45221/" target="_blank" rel="noopener noreferrer">Rakesh Solanki</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fab fa-github"></i></div>
-            <div class="contact-item-text">
-              <span>GitHub</span>
-              <a href="https://github.com/Rakes001160" target="_blank" rel="noopener noreferrer">Rakes001160</a>
-            </div>
-          </div>
+
+      <div class="contact-wrapper reveal">
+        <div class="contact-intro">
+          <h3>Let's Collaborate on Spatial Innovation</h3>
+          <p>
+            Whether you are planning a municipal flood study, seeking automated GIS solutions, or building a high-performance geospatial team — feel free to reach out directly through any of the channels below.
+          </p>
         </div>
-        <form class="contact-form reveal-right" onsubmit="event.preventDefault(); alert('Thank you for your message! I will get back to you soon.');">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Name" required>
+
+        <div class="contact-cards-grid">
+          <!-- Card 1: Email (Direct Gmail compose) -->
+          <a class="contact-card" href="https://mail.google.com/mail/?view=cm&to=rakeshsolanki001160@gmail.com" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Email Directly</span>
+              <span class="contact-card-value">rakeshsolanki001160@gmail.com</span>
+            </div>
+            <div class="contact-card-arrow"><i class="fas fa-external-link-alt"></i></div>
+          </a>
+
+          <!-- Card 2: Phone -->
+          <a class="contact-card" href="tel:+918200469254">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Phone &amp; WhatsApp</span>
+              <span class="contact-card-value">+91 8200469254</span>
+            </div>
+            <div class="contact-card-arrow"><i class="fas fa-phone"></i></div>
+          </a>
+
+          <!-- Card 3: LinkedIn -->
+          <a class="contact-card" href="https://www.linkedin.com/in/rakesh-solanki-30ba45221/" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">LinkedIn Profile</span>
+              <span class="contact-card-value">linkedin.com/in/rakesh-solanki</span>
+            </div>
+            <div class="contact-card-arrow"><i class="fas fa-external-link-alt"></i></div>
+          </a>
+
+          <!-- Card 4: GitHub -->
+          <a class="contact-card" href="https://github.com/Rakes001160" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">GitHub Repositories</span>
+              <span class="contact-card-value">github.com/Rakes001160</span>
+            </div>
+            <div class="contact-card-arrow"><i class="fas fa-external-link-alt"></i></div>
+          </a>
+
+          <!-- Card 5: Location -->
+          <div class="contact-card static-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Base Location</span>
+              <span class="contact-card-value">Ahmedabad, Gujarat, India</span>
+            </div>
+            <div class="contact-card-arrow"><i class="fas fa-globe-asia"></i></div>
           </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="Mail" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Write your message here..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
+
+          <!-- Card 6: Download Resume -->
+          <a class="contact-card cv-card" href="Rakesh_Solanki_Resume.pdf" download="Rakesh_Solanki_Geospatial_Analyst_Resume.pdf">
+            <div class="contact-icon"><i class="fas fa-file-pdf"></i></div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Executive Resume</span>
+              <span class="contact-card-value">Download Resume (PDF)</span>
+            </div>
+            <div class="contact-card-arrow"><i class="fas fa-download"></i></div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>&copy; 2026 Rakesh Solanki. Crafted with <span class="heart">♥</span> and geospatial passion.</p>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-accent">R.</span>SOLANKI — Geospatial Analyst
+      </div>
+      <p class="footer-tagline">Municipal Flood Studies • Sentinel-1 SAR Remote Sensing • Python Spatial Automation</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="cv.html" target="_blank">Online CV</a>
+        <a href="Rakesh_Solanki_Resume.pdf" download>Download PDF</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Rakesh Solanki. Crafted with precision &amp; geospatial passion.</p>
+    </div>
   </footer>
+
+  <!-- ===== MODAL: INTERACTIVE CV VIEWER ===== -->
+  <div class="cv-modal" id="cv-modal" aria-hidden="true">
+    <div class="cv-modal-overlay" id="cv-modal-overlay"></div>
+    <div class="cv-modal-dialog">
+      <div class="cv-modal-header">
+        <div class="modal-title">
+          <i class="fas fa-file-alt"></i> Rakesh Solanki — Official CV Preview
+        </div>
+        <div class="modal-actions">
+          <a href="Rakesh_Solanki_Resume.pdf" download="Rakesh_Solanki_Geospatial_Analyst_Resume.pdf" class="btn-modal-action primary">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+          <a href="cv.html" target="_blank" class="btn-modal-action secondary">
+            <i class="fas fa-external-link-alt"></i> Full Screen
+          </a>
+          <button class="modal-close-btn" id="cv-modal-close" aria-label="Close modal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="cv-modal-body">
+        <iframe src="cv.html" title="CV Preview Frame" id="cv-iframe"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Copied to clipboard!</div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

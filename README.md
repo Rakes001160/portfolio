@@ -3,13 +3,6 @@
 ### 🛰️ Geospatial Analyst | GIS Specialist | Remote Sensing Expert | PyQGIS Tool Developer
 📍 **Ahmedabad, Gujarat, India**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rakesh-solanki-30ba45221/)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=rakeshsolanki001160@gmail.com)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/918200469254)
-[![Call](https://img.shields.io/badge/Phone-+91_8200469254-4CAF50?style=flat-square&logo=phone&logoColor=white)](tel:+918200469254)
-[![Live Website](https://img.shields.io/badge/Live_Portfolio-06D6A0?style=flat-square&logo=googlechrome&logoColor=080c16)](https://rakes001160.github.io/portfolio/)
-[![Resume](https://img.shields.io/badge/Download_Resume_(PDF)-00B4D8?style=flat-square&logo=adobeacrobatreader&logoColor=white)](Rakesh_Solanki_Resume.pdf)
-
 ---
 
 Results-driven **GIS Specialist & Geospatial Analyst** with **3+ years** of professional experience delivering spatial analysis, remote sensing, and custom Python automation for municipal corporations (**AMC, GMC, SMC**), state urban missions (**GUDM**), central government agencies (**AICL**), and corporate industrial/real estate master plans.
@@ -23,7 +16,6 @@ Specializes in catchment delineation (QGIS, ArcMap, basic HEC-HMS), stream order
 [![Portfolio Website](https://img.shields.io/badge/Live_Portfolio_Website-06D6A0?style=for-the-badge&logo=googlechrome&logoColor=080c16)](https://rakes001160.github.io/portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn_Profile-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rakesh-solanki-30ba45221/)
 [![Gmail](https://img.shields.io/badge/Open_in_Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=rakeshsolanki001160@gmail.com)
-[![WhatsApp](https://img.shields.io/badge/Chat_on_WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/918200469254)
 [![Download Resume](https://img.shields.io/badge/Download_Resume_(PDF)-00B4D8?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](Rakesh_Solanki_Resume.pdf)
 [![GitHub](https://img.shields.io/badge/GitHub_Repositories-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rakes001160)
 
